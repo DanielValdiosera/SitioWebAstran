@@ -941,3 +941,10 @@ label {
   border: 5px solid #70a8b8;
   width: 25%;
 }
+
+.social-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+}
