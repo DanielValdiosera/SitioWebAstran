@@ -259,9 +259,9 @@ input {
   box-sizing: border-box;
   border-radius: 25px;
   border-width: 2px;
+  border: solid;
+  color: #3898c8;
   font-size: 1rem;
-  color: #106088;
-  border-color: #106088;
   font-family: 'D-DIN', 'DIN', 'Roboto Condensed', sans-serif;
 }
 
@@ -273,8 +273,8 @@ textarea {
   border-radius: 25px;
   border-width: 2px;
   font-size: 1rem;
-  color: #106088;
-  border-color: #106088;
+  border: solid;
+  color: #3898c8;
   font-family: 'D-DIN', 'DIN', 'Roboto Condensed', sans-serif;
 }
 
