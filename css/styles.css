@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "DIN";
-  src: url("fonts/FF_DIN_Medium.otf");
+  font-family: 'DIN';
+  src: url('fonts/FF_DIN_Medium.otf');
 }
 
 @font-face {
-  font-family: "D-DIN";
-  src: url("fonts/D-DINCondensed.otf");
+  font-family: 'D-DIN';
+  src: url('fonts/D-DINCondensed.otf');
 }
 
 body {
   margin: 0;
-  font-family:'D-DIN', 'DIN', 'Roboto Condensed', sans-serif;
+  font-family: 'D-DIN', 'DIN', 'Roboto Condensed', sans-serif;
 }
 
 nav {
@@ -38,7 +38,9 @@ ul {
 
 li {
   color: #c8c8c8;
+  margin: auto 8px;
 }
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -50,7 +52,6 @@ nav ul li {
   display: inline-block;
   background-color: white;
   text-align: center;
-
 }
 
 nav a {
@@ -86,7 +87,6 @@ nav ul ul ul li {
   font-size: 1rem;
   line-height: 0.5;
 }
-
 
 /* Third and more */
 nav ul ul ul ul li {
@@ -125,7 +125,6 @@ h2 {
 
 .oferta {
   font-size: 3rem;
-  padding: 10px;
   font-style: normal;
   font-weight: normal;
   color: gray;
@@ -303,7 +302,7 @@ label {
 }
 
 .content-p-white {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 20px 60px 20px 0;
   line-height: 1.5;
   text-align: justify;
@@ -312,7 +311,7 @@ label {
 }
 
 .content-p-white-centered {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 40px 0 0 0;
   padding: 0;
   line-height: 1.5;
@@ -320,7 +319,6 @@ label {
   color: white;
   font-weight: lighter;
 }
-
 
 .content-p-italic {
   font-size: 1.5rem;
@@ -338,6 +336,27 @@ label {
   background-color: #f8f8f8;
   padding: 5px;
   color: #007898;
+}
+
+.content-special-p-alt {
+  font-size: 1.75rem;
+  margin: 20px 60px 0 0;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+  padding: 5px;
+  color: #007898;
+  display: inline-block;
+}
+
+.content-special-p-alt2 {
+  font-size: 1.75rem;
+  margin: 20px 60px 0 0;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+  padding: 5px;
+  color: #007898;
+  display: inline-block;
+  float: right;
 }
 
 .content-li-p {
@@ -452,6 +471,7 @@ label {
   height: auto;
   text-align: center;
 }
+
 .capacitacion-table {
   border: 1;
 }
@@ -542,7 +562,6 @@ label {
   text-align: right;
   color: #106088;
   width: 50%;
-
 }
 
 .cifras-relevantes-p {
@@ -651,7 +670,6 @@ label {
   font-size: 3rem;
   font-style: normal;
   font-weight: normal;
-  color: #106088;
   position: absolute;
   color: white;
   z-index: 49;
@@ -676,6 +694,7 @@ label {
   line-height: 30px;
   text-decoration: none;
 }
+
 .search-input {
   width: 194px;
   padding: 12px 20px;
@@ -775,10 +794,6 @@ label {
   margin: 20px 0;
 }
 
-.align-content-top {
-
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -788,7 +803,7 @@ label {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 160px;
-  height: 40px;
+  height: 50px;
   background-color: #1868a0;
   color: #fff;
   text-align: center;
@@ -798,7 +813,6 @@ label {
   right: 60px;
   top: 5px;
   font-size: 1.1rem;
-
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -806,4 +820,8 @@ label {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.span-align-right {
+  text-align: right;
 }
