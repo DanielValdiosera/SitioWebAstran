@@ -7,6 +7,8 @@
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <script src="js/cdn/jquery-3.5.0.js"></script>
+  <script src="js/functions.service.js"></script>
 </head>
 
 <body>
@@ -100,7 +102,7 @@
       <tbody class="servicios-tbody">
         <tr class="servicios-tr" height="50%">
           <td width="30%" class="servicios-td">
-            <div class="servicios-div">
+            <div class="servicios-div" id="service-consultancy">
               <img src="images/consultoria.jpg" alt="" class="servicios-img">
               <p class="servicios-p">Consultoría</p>
             </div>
@@ -111,7 +113,7 @@
               </div>
             </td>
             <td width="30%" class="servicios-td">
-              <div class="servicios-div">
+              <div class="servicios-div" id="service-implementation">
                 <img src="images/servicios-implementacion.jpg" alt="" class="servicios-img">
                 <p class="servicios-p">Implementación</p>
               </div>
@@ -119,24 +121,16 @@
         </tr>
         <tr class="servicios-tr">
           <td width="30%" class="servicios-td">
-            <div class="servicios-div">
+            <div class="servicios-div" id="service-tecnology">
               <img src="images/servicios-tecnologia.jpg" alt="" class="servicios-img-alt">
               <p class="servicios-p">Tecnología</p>
             </div>
           </td>
-          <td width="40%" class="servicios-td">
-            <p class="servicios-p2">Inteligencia Empresarial</p>
-            <hr width="10%">
-            <p class="servicios-p2">Planeación y Seguimiento de Proyectos:<br />Predictivos y/o Adaptativos</p>
-            <hr width="10%">
-            <p class="servicios-p2">Optimización del Portafilio</p>
-            <hr width="10%">
-            <p class="servicios-p2">Gestión de Beneficios</p>
-            <hr width="10%">
-            <p class="servicios-p2">Administración del Cambio</p>
+          <td width="40%" class="servicios-td" id="options-services">
+            <!--Servicios astran-->
           </td>
           <td width="30%" class="servicios-td">
-            <div class="servicios-div">
+            <div class="servicios-div" id="service-training">
               <img src="images/servicios3.jpg" alt="" class="servicios-img-alt">
               <p class="servicios-p">Capacitación</p>
             </div>
@@ -144,6 +138,7 @@
         </tr>
       </tbody>
     </table>
+    
   </div>
   <footer>
     <div class="footer-div">
