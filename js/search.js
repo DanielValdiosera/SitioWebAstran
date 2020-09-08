@@ -1,5 +1,17 @@
 
+var url =  window.location.host;
+var api =  null;
+switch(url){
+    case 'grupoastranastranti.com':
+    case 'astran.com.mx':
+        this.api = 'http://bk.astran.com.mx/public/index.php/api'
+        break;
+    default : 
+        this.api = 'http://astran.test/api'
+    break;
+}
 $(function(){
+
     $("#tags").keyup(function(){
         let q = $("#tags").val();
         sugesstion(q);
@@ -25,6 +37,7 @@ $(function(){
 //Busqueda de contenido
 function search()
 {
+    console.log(this.api);
     let q = $("#tags").val();
     var listaSearch = $("#content-container");
     let container = $('#pagination');
@@ -39,7 +52,7 @@ function search()
     listaSearch.html(spiner);
 
     var request  = $.ajax({
-        url:'http://astran.test/api/search?q='+q ,
+        url:this.api+'/search?q='+q ,
         method:'GET',
         success:function(r){
             var d = r ;
@@ -81,7 +94,7 @@ function search()
 //Sugerencias de contenido
 function sugesstion(q){
     var request  = $.ajax ({
-        url:'http://astran.test/api/sugesstion?q='+q ,
+        url:this.api+'/sugesstion?q='+q ,
         method:'GET' ,
         success: function(r) {
             var availableTags = []; 
