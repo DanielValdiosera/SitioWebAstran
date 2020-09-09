@@ -70,7 +70,7 @@ function search()
                        var html = ' <div class="content-search">';  
                         $.each(data ,function(i,item){
                             html+= '<article class="search-result-item"><h4 style="text-align:left !important;padding:0px !important;margin-top:10px"><a href="'+item.url+'" class="searchTitle">'+item.title+'</a></h4>' +
-                                '<span class="searchContent">'+ item.content+'</span></article>'    
+                                '<span class="searchContent">'+ item.content.substr(0,250) +' ... </span></article>'    
                         });
         
                         html += "</div>";
