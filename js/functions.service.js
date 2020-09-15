@@ -2,17 +2,17 @@
 $(document).ready(function(){
     services('consultancy');
 })
-$(document).on('click','#service-consultancy',function(){
+$(document).on('mouseover click','#service-consultancy',function(){
     services('consultancy');
 });
 
-$(document).on('click','#service-implementation',function(){
+$(document).on('mouseover click','#service-implementation',function(){
     services('implementation');
 })
-$(document).on('click','#service-tecnology', function(){
+$(document).on('mouseover click','#service-tecnology', function(){    
     services('tecnology');
 })
-$(document).on('click','#service-training',function(){
+$(document).on('mouseover click','#service-training',function(){
     services('training');
 })
 
@@ -24,9 +24,9 @@ function services(service){
 
                 options =[{url:'inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
                           {url:'optimizacion-portafolio-iniciativas.html',topic:'Optimización del Portafolio de Iniciativas'},
-                          {url:'planeacion-seguimiento-proyectos.html',topic:'Planeación y Seguimiento De Proyectos:<br/>Predictivos y/o Adaptativos'},
-                          {url:'gestion-beneficios.html',topic:'Gestión De Beneficios'},
-                          {url:'administracion-cambio.html',topic:'Administración Del Cambio'},
+                          {url:'planeacion-seguimiento-proyectos.html',topic:'Planeación y Seguimiento de Proyectos:<br/>Predictivos y/o Adaptativos'},
+                          {url:'gestion-beneficios.html',topic:'Gestión de Beneficios'},
+                          {url:'administracion-cambio.html',topic:'Administración del Cambio'},
                         ];
              
                 
@@ -34,9 +34,9 @@ function services(service){
 
         case 'implementation':
 
-            options =[{url:'implementacion-especialidades.html#gestion',topic:'Gestión De Proyectos'},
-            {url:'implementacion-especialidades.html#tecnologia',topic:'Tecnología Microsoft Para Gestión De Proyectos'},
-            {url:'implementacion-especialidades.html#administracion',topic:'Administración Del Cambio'},
+            options =[{url:'implementacion-especialidades.html#gestion',topic:'Gestión de Proyectos'},
+            {url:'implementacion-especialidades.html#tecnologia',topic:'Tecnología Microsoft para Gestión de Proyectos'},
+            {url:'implementacion-especialidades.html#administracion',topic:'Administración del Cambio'},
       
           ];
 
@@ -44,13 +44,13 @@ function services(service){
         case 'tecnology':
           
             options =[{url:'tecnologia-inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
-            {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial De Proyectos Con Microsoft'},
+            {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial de Proyectos con Microsoft'},
             {url:'administracion-empresarial-proyectos-ms-ppm.html#',topic:'Aceleradores ASTRAN'},
              ];
         
         break;
         case 'training':    
-                options =[{url:'capacitacion.html',topic:'Prácticas De Gestión'},
+                options =[{url:'capacitacion.html',topic:'Prácticas de Gestión'},
                 {url:'capacitacion.html',topic:'Competencias Digitales'},
                 ];
         
