@@ -204,6 +204,17 @@ h2 {
   font-family: 'd-din_condensedregular';
 }
 
+.h2-white-centered {
+  font-size: 3rem;
+  padding: 10px;
+  font-style: normal;
+  font-weight: lighter;
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-family: 'd-din_condensedregular';
+}
+
 .h2-white-small {
   font-size: 2rem;
   padding: 10px;
@@ -1188,4 +1199,18 @@ a {
 
 .table-alt {
   margin: auto;
+}
+
+.white-small {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: lighter;
+  color: white;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-align: left;
+  font-family: 'd-din_condensedregular';
+  position: absolute;
 }
