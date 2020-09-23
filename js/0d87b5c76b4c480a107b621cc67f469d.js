@@ -34,7 +34,7 @@ $(document).ready(function(){
                 mensaje:  $('[name="comentario"]').val()  
             };
             var request = $.ajax({
-                url:'http://astran.test/api/mailcontacto' ,
+                url:this.api+ '/mailcontacto' ,
                 method:'POST' ,
                 data: 'json='+ JSON.stringify(dato) ,
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
