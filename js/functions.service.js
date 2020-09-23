@@ -34,9 +34,11 @@ function services(service){
 
         case 'implementation':
 
-            options =[{url:'implementacion-especialidades.html#gestion',topic:'Gestión de Proyectos'},
-            {url:'implementacion-especialidades.html#tecnologia',topic:'Tecnología Microsoft para Gestión de Proyectos'},
-            {url:'implementacion-especialidades.html#administracion',topic:'Administración del Cambio'},
+            options =[
+            {url:'implementacion-expertos.html',topic:'Implementación con expertos en: '},
+            {url:'implementacion-expertos.html',topic:'Gestión de Proyectos'},
+            {url:'implementacion-expertos.html',topic:'Tecnología Microsoft para Gestión de Proyectos'},
+            {url:'implementacion-expertos.html',topic:'Administración del Cambio'},
       
           ];
 
@@ -50,8 +52,11 @@ function services(service){
         
         break;
         case 'training':    
-                options =[{url:'capacitacion.html',topic:'Prácticas de Gestión'},
+                options =[
+                {url:'capacitacion.html',topic:'Formación corporativa en: '},
+                {url:'capacitacion.html',topic:'Prácticas de Gestión'},
                 {url:'capacitacion.html',topic:'Competencias Digitales'},
+                {url:'capacitacion.html',topic:'PMO/express PMO/elemental'},
                 ];
         
         break;
@@ -64,7 +69,7 @@ function services(service){
 
    
     for(let i=0; i<options.length;i++){
-        html +=  '<p class="servicios-p2 "><a style="color:white" target="_blank" href="'+options[i].url+'">'+options[i].topic+'</a></p>';
+        html +=  '<p class="servicios-p2 "><a style="color:white"  href="'+options[i].url+'">'+options[i].topic+'</a></p>';
 
         //#bug  deberiamos arreglar el width del contenedor 
         if(i<(options.length-1)){
