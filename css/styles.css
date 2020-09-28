@@ -161,7 +161,6 @@ h2 {
 }
 
 .oferta {
-  font-size: 3rem;
   font-style: normal;
   font-weight: normal;
   color: gray;
@@ -314,6 +313,7 @@ input {
   /*font-size: 1rem;*/
   font-size: 1.5rem;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
+  outline: none;
 }
 
 textarea {
@@ -327,6 +327,7 @@ textarea {
   border: solid;
   color: #3898c8;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
+  outline: none;
 }
 
 label {
@@ -436,7 +437,7 @@ label {
 
 .content-special-p {
   font-size: 1.75rem;
-  margin: 20px 60px 0 0;
+  margin: 20px 0 0 0;
   line-height: 1.5;
   text-align: justify;
   background-color: #f8f8f8;
@@ -617,7 +618,7 @@ a {
 
 .practicas-de-gestion-table {
   border: 7.5px solid #b0c8e0;
-  margin: 0 2.5%;
+  margin: 0 2.5% 15px 2.5%;
   width: 95%;
   display: inline-block;
   padding: 0;
@@ -889,6 +890,7 @@ a {
   color: #106088;
   border-color: #106088;
   height: 25px;
+  outline: none;
 }
 input:focus, textarea:focus{
 
@@ -1212,11 +1214,11 @@ input:focus, textarea:focus{
 }
 
 .white-small {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: lighter;
   color: white;
-  margin-left: 1px;
+  margin-left: 3px;
   margin-top: 1px;
   margin-right: 0;
   margin-bottom: 0;
