@@ -4,7 +4,7 @@ $(document).ready(function(){
 })
 
 $(document).on('mouseleave','#service-table',function(){
-   // services('imgservice');
+    services('imgservice');
 });
 $(document).on('mouseover click','#service-consultancy',function(){
     services('consultancy');
@@ -99,7 +99,6 @@ function services(service){
 $("#service-consultancy").hover(function(){
     $("#img1").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p1").css({
         "background-color":"rgba(0,0,0,0)",
@@ -119,7 +118,6 @@ $("#service-consultancy").hover(function(){
   $("#service-implementation").hover(function(){
     $("#img2").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p2").css({
         "background-color":"rgba(0,0,0,0)",
@@ -140,7 +138,6 @@ $("#service-consultancy").hover(function(){
   $("#service-tecnology").hover(function(){
     $("#img3").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p3").css({
         "background-color":"rgba(0,0,0,0)",
@@ -161,7 +158,6 @@ $("#service-consultancy").hover(function(){
   $("#service-training").hover(function(){
     $("#img4").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p4").css({
         "background-color":"rgba(0,0,0,0)",
