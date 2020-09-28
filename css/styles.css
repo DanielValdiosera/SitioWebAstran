@@ -1132,6 +1132,25 @@ input:focus, textarea:focus{
   font-weight: lighter;
   margin: 5px;
 }
+.service-title{
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-family: "dinregular";
+  font-weight: lighter;
+  margin: 5px;
+}
+ul.service-title{
+  list-style: none;
+
+}
+ul.service-title>li::before {
+  content: "\2022";
+  border-radius: 50%;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
+  color: #fff;
+}
 
 .servicios-div {
   position: relative;
@@ -1226,3 +1245,4 @@ input:focus, textarea:focus{
   font-family: 'd-din_condensedregular';
   position: absolute;
 }
+

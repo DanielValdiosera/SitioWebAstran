@@ -4,7 +4,7 @@ $(document).ready(function(){
 })
 
 $(document).on('mouseleave','#service-table',function(){
-    services('imgservice');
+   // services('imgservice');
 });
 $(document).on('mouseover click','#service-consultancy',function(){
     services('consultancy');
@@ -23,8 +23,7 @@ $(document).on('mouseover click','#service-training',function(){
 function services(service){
 
     if(service === 'imgservice'){
-        $("#options-services").html('<img src="https://img.freepik.com/foto-gratis/fondo-azul-holograma-mapa-mundo-digitaces_1379-901.jpg?size=626&ext=jpg&ga=GA1.2.1673737949.1600904647" width="447px" height="200px">')
-    }
+        $("#options-services").html('<img src="images/servicios6.jpg" class="servicios-img-alt">')}
     else {
 
         var options =[{}]; 
@@ -44,10 +43,11 @@ function services(service){
     
             case 'implementation':
                 title='Implementación con Expertos en:';
+                html+= '<p class="service-title">'+title+'</p>';
+
                 options =[
-                {url:'implementacion-expertos.html',topic:'Gestión de Proyectos'},
-                {url:'implementacion-expertos.html',topic:'Tecnología Microsoft para Gestión de Proyectos'},
-                {url:'implementacion-expertos.html',topic:'Administración del Cambio'},
+                {url:'implementacion-expertos.html',topic:'<ul class="service-title"><li >Gestión de Proyectos</li><li>Tecnología Microsoft para Gestión de Proyectos</li><li>Administración del Cambio</li>'},
+                
           
               ];
     
@@ -56,17 +56,16 @@ function services(service){
               
                 options =[{url:'tecnologia-inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
                 {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial de Proyectos con Microsoft'},
-                {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Aceleradores ASTRAN'},
-                {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'<a href="pmo-express.html">PMO Express</a> | <a href="pmo-elemental.html">PMO Elemental</a>'},
+                {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'<a style="color:white" href="administracion-empresarial-proyectos-ms-ppm.html">Aceleradores ASTRAN</a><br><a style="color:white"   href="pmo-express.html">PMO Express</a> | <a style="color:white"   href="pmo-elemental.html">PMO Elemental</a>'},
 
                  ];
             
             break;
             case 'training':   
-                    title='Formación corporativa en :';
+                    title='Formación corporativa en:';
+                    html+= '<p class="service-title">'+title+'</p>';
                     options =[
-                    {url:'capacitacion.html',topic:'Prácticas de Gestión'},
-                    {url:'capacitacion.html',topic:'Competencias Digitales'},
+                    {url:'capacitacion.html',topic:'Prácticas de Gestión y <br>Competencias Digitales'},
                     ];
             
             break;
@@ -78,8 +77,7 @@ function services(service){
                 break;
         }
     
-        html+= title;
-    
+
         for(let i=0; i<options.length;i++){
             html +=  '<p class="servicios-p2 "><a style="color:white"  href="'+options[i].url+'">'+options[i].topic+'</a></p>';
     
