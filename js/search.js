@@ -86,7 +86,7 @@ function search()
     });
 
     request.fail(function( jqXHR, textStatus ) {
-        listaSearch.html('<h4 style="padding:0px !important;margin-top:10px; color:red">Hay un problema en el servidor , vuelva intntarlo más tarde</h4>')
+        listaSearch.html('<h4 style="padding:0px !important;margin-top:10px; color:red">Hay un problema en el servidor, vuelva intentarlo más tarde</h4>')
       });
 }
 // Fin Busqueda de contenido

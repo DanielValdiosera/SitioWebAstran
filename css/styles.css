@@ -303,14 +303,16 @@ tbody {
 
 input {
   width: 100%;
-  padding: 12px 20px;
+  /*padding: 12px 20px;*/
+  padding: 7.5px 20px;
   margin: 8px 0 30px 0;
   box-sizing: border-box;
   border-radius: 25px;
   border-width: 2px;
   border: solid;
   color: #3898c8;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
+  font-size: 1.5rem;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
 }
 
@@ -321,7 +323,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 25px;
   border-width: 2px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border: solid;
   color: #3898c8;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
@@ -887,6 +889,14 @@ a {
   color: #106088;
   border-color: #106088;
   height: 25px;
+}
+input:focus, textarea:focus{
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .search-img {
