@@ -499,7 +499,7 @@ label {
   max-width: 1138px;
   height: auto;
   display: block;
-  margin: 0 auto 0px auto;
+  margin: 0 auto 10px auto;
 }
 
 .footer-div {
@@ -936,6 +936,16 @@ input:focus, textarea:focus{
   margin-top: 10px;
 }
 
+.nice-img-alt3 {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .nice-h3 {
   font-size: 2rem;
   font-weight: bolder;
@@ -945,7 +955,7 @@ input:focus, textarea:focus{
 .container {
   position: relative;
   text-align: center;
-  margin: 5px auto 0 auto;
+  margin: 5px auto 5px auto;
   width: 100%;
   z-index: -1;
 }
@@ -1251,4 +1261,3 @@ ul.service-title>li::before {
   font-family: 'd-din_condensedregular';
   position: absolute;
 }
-
