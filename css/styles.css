@@ -339,6 +339,13 @@ label {
   text-align: justify;
 }
 
+.content-p-alt {
+  font-size: 1.5rem;
+  margin: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
 .content-p-centered {
   font-size: 1.5rem;
   margin: 20px;
