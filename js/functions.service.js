@@ -1,7 +1,11 @@
 
 $(document).ready(function(){
-    services('consultancy');
+    services('imgservice');
 })
+
+$(document).on('mouseleave','#service-table',function(){
+    services('imgservice');
+});
 $(document).on('mouseover click','#service-consultancy',function(){
     services('consultancy');
 });
@@ -17,76 +21,84 @@ $(document).on('mouseover click','#service-training',function(){
 })
 
 function services(service){
-    var options =[{}]; 
-    var html='';
-    switch(service){
-        case 'consultancy':
 
-                options =[{url:'inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
-                          {url:'optimizacion-portafolio-iniciativas.html',topic:'Optimización del Portafolio de Iniciativas'},
-                          {url:'planeacion-seguimiento-proyectos.html',topic:'Planeación y Seguimiento de Proyectos:<br/>Predictivos y/o Adaptativos'},
-                          {url:'gestion-beneficios.html',topic:'Gestión de Beneficios'},
-                          {url:'administracion-cambio.html',topic:'Administración del Cambio'},
-                        ];
-             
-                
-        break;
+    if(service === 'imgservice'){
+        $("#options-services").html('<img src="images/servicios6.jpg" class="servicios-img-alt">')}
+    else {
 
-        case 'implementation':
-
-            options =[
-            {url:'implementacion-expertos.html',topic:'Implementación con expertos en: '},
-            {url:'implementacion-expertos.html',topic:'Gestión de Proyectos'},
-            {url:'implementacion-expertos.html',topic:'Tecnología Microsoft para Gestión de Proyectos'},
-            {url:'implementacion-expertos.html',topic:'Administración del Cambio'},
-      
-          ];
-
-        break;
-        case 'tecnology':
-          
-            options =[{url:'tecnologia-inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
-            {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial de Proyectos con Microsoft'},
-            {url:'administracion-empresarial-proyectos-ms-ppm.html#',topic:'Aceleradores ASTRAN'},
-             ];
-        
-        break;
-        case 'training':    
-                options =[
-                {url:'capacitacion.html',topic:'Formación corporativa en: '},
-                {url:'capacitacion.html',topic:'Prácticas de Gestión'},
-                {url:'capacitacion.html',topic:'Competencias Digitales'},
-                {url:'capacitacion.html',topic:'PMO/express PMO/elemental'},
-                ];
-        
-        break;
-        default:
-            options = ['Por el momento no hay información',
-          
-            ];
+        var options =[{}]; 
+        var html='';
+        var title= '';
+        switch(service){
+            case 'consultancy':
+                    options =[{url:'inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
+                              {url:'optimizacion-portafolio-iniciativas.html',topic:'Optimización del Portafolio de Iniciativas'},
+                              {url:'planeacion-seguimiento-proyectos.html',topic:'Planeación y Seguimiento de Proyectos:<br/>Predictivos y/o Adaptativos'},
+                              {url:'gestion-beneficios.html',topic:'Gestión de Beneficios'},
+                              {url:'administracion-cambio.html',topic:'Administración del Cambio'},
+                            ];
+                 
+                    
             break;
-    }
+    
+            case 'implementation':
+                title='Implementación con Expertos en:';
+                html+= '<p class="service-title">'+title+'</p>';
 
-   
-    for(let i=0; i<options.length;i++){
-        html +=  '<p class="servicios-p2 "><a style="color:white"  href="'+options[i].url+'">'+options[i].topic+'</a></p>';
+                options =[
+                {url:'implementacion-expertos.html',topic:'<ul class="service-title"><li >Gestión de Proyectos</li><li>Tecnología Microsoft para Gestión de Proyectos</li><li>Administración del Cambio</li>'},
+                
+          
+              ];
+    
+            break;
+            case 'tecnology':
+              
+                options =[{url:'tecnologia-inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
+                {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial de Proyectos con Microsoft'},
+                {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'<a style="color:white" href="administracion-empresarial-proyectos-ms-ppm.html">Aceleradores ASTRAN</a><br><a style="color:white"   href="pmo-express.html">PMO Express</a> | <a style="color:white"   href="pmo-elemental.html">PMO Elemental</a>'},
 
-        //#bug  deberiamos arreglar el width del contenedor 
-        if(i<(options.length-1)){
-            html += '<hr width="10%">';
+                 ];
+            
+            break;
+            case 'training':   
+                    title='Formación corporativa en:';
+                    html+= '<p class="service-title">'+title+'</p>';
+                    options =[
+                    {url:'capacitacion.html',topic:'Prácticas de Gestión y <br>Competencias Digitales'},
+                    ];
+            
+            break;
+    
+            default:
+                options = ['Por el momento no hay información',
+              
+                ];
+                break;
         }
-        
+    
+
+        for(let i=0; i<options.length;i++){
+            html +=  '<p class="servicios-p2 "><a style="color:white"  href="'+options[i].url+'">'+options[i].topic+'</a></p>';
+    
+            //#bug  deberiamos arreglar el width del contenedor 
+            if(i<(options.length-1)){
+                html += '<hr width="10%">';
+            }
+            
+        }
+       
+        $("#options-services").html(html);
+
     }
    
-    $("#options-services").html(html);
-
+    
 }
 
 //Optimizar el código
 $("#service-consultancy").hover(function(){
     $("#img1").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p1").css({
         "background-color":"rgba(0,0,0,0)",
@@ -106,7 +118,6 @@ $("#service-consultancy").hover(function(){
   $("#service-implementation").hover(function(){
     $("#img2").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p2").css({
         "background-color":"rgba(0,0,0,0)",
@@ -127,7 +138,6 @@ $("#service-consultancy").hover(function(){
   $("#service-tecnology").hover(function(){
     $("#img3").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p3").css({
         "background-color":"rgba(0,0,0,0)",
@@ -148,7 +158,6 @@ $("#service-consultancy").hover(function(){
   $("#service-training").hover(function(){
     $("#img4").css({
         "opacity":".1",
-        "cursor":"pointer",
     });
     $("#p4").css({
         "background-color":"rgba(0,0,0,0)",

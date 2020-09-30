@@ -302,14 +302,16 @@ tbody {
 
 input {
   width: 100%;
-  padding: 12px 20px;
+  /*padding: 12px 20px;*/
+  padding: 7.5px 20px;
   margin: 8px 0 30px 0;
   box-sizing: border-box;
   border-radius: 25px;
   border-width: 2px;
   border: solid;
   color: #3898c8;
-  font-size: 1.25rem;
+  /*font-size: 1rem;*/
+  font-size: 1.5rem;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
   outline: none;
 }
@@ -321,7 +323,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 25px;
   border-width: 2px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border: solid;
   color: #3898c8;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
@@ -897,6 +899,14 @@ a {
   height: 25px;
   outline: none;
 }
+input:focus, textarea:focus{
+
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
 
 .search-img {
   vertical-align: middle;
@@ -1096,7 +1106,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  cursor: pointer;
 }
 
 .servicios-tbody {
@@ -1128,6 +1137,25 @@ a {
   font-family: "dinregular";
   font-weight: lighter;
   margin: 5px;
+}
+.service-title{
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-family: "dinregular";
+  font-weight: lighter;
+  margin: 5px;
+}
+ul.service-title{
+  list-style: none;
+
+}
+ul.service-title>li::before {
+  content: "\2022";
+  border-radius: 50%;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
+  color: #fff;
 }
 
 .servicios-div {
@@ -1223,3 +1251,4 @@ a {
   font-family: 'd-din_condensedregular';
   position: absolute;
 }
+
