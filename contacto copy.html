@@ -92,12 +92,35 @@
       </div>
     </div>
     <div class="main-content-div">
-      <iframe width="100%" height= "1500px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=EmQXsmuFgkilJrd28XuWlJsnwkmxnBxMhAoOefxzV85UQkJQS1JYSVJRMDdVR1FJWE1VMVROVVNKTy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; min-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-      <div class="align-right-div">
-        <button class="btn2" type="submit" name="button" id="claims">Solicitud de reclamo de datos</button>
+      <br />
+      <div class="form-div" id="formContacto">
+        <form class="contact-form">
+          <label for="nombre">Su nombre (requerido)</label>
+          <div id="validateName"></div>
+          <input type="text" name="nombre" id="nombre" value=""><br>
+          <label for="telefono">Su teléfono</label>
+          <div id="validatePhone"></div>
+          <input type="number" name="telefono" id="telefono" value=""><br>
+          <label for="">Su correo electrónico (requerido)</label>
+          <div id="validateEmail"></div>
+          <input type="email" name="email" id="email" value=""><br>
+
+          <label for="">Su asunto</label><br>
+          <input type="text" name="asunto" id="asunto" value=""><br>
+          <label for="">Su mensaje</label><br>
+          <textarea name="comentario" rows="10" id="comentario" cols="30"></textarea><br>
+          <button class="btn1"  type="submit" id="sendMail" name="button"> Enviar
+
+          </button>
+          <div class="align-right-div">
+            <button class="btn2" type="submit" name="button" id="claims">Solicitud de reclamo de datos</button>
+          </div>
+
+        </form>
       </div>
     </div>
 
+    <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=EmQXsmuFgkilJrd28XuWlJsnwkmxnBxMhAoOefxzV85UNDJaVVpQWUhGOFAxNVZNRkZRNUdZWFpKMy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
   </div>
   <div>
     <section>
