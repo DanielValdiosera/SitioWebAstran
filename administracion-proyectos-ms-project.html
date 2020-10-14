@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astran – Administración de Proyectos con Microsoft Project</title>
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="css/styles.css">
@@ -14,7 +15,100 @@
   <div class="main-banner-div">
     <a href="index.html"><img class="main-banner" src="images/banner1.png" alt=""></a>
   </div>
-  <nav>
+  <nav class="mobile-nav-bar">
+    <label for="drop" class="toggle-main">NAVEGACÍON</label>
+    <div class="mobile-search">
+      <span onclick="search()" style="cursor: pointer;"><img class="search-img" src="images/search-blue.png" alt="" width="20px"></span>
+      <span class="ui-widget">
+        <input id="tags" class="search-input">
+        <span id="search"></span>
+      </span>
+    </div>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+        <!-- First Tier Drop Down -->
+        <label for="drop-2" class="toggle">SERVICIOS +</label>
+        <a href="servicios.hmtl">SERVICIOS</a>
+        <input type="checkbox" id="drop-2" />
+        <ul>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-3" class="toggle">CONSULTORÍA +</label>
+            <a href="inteligencia-empresarial.html">CONSULTORÍA</a>
+            <input type="checkbox" id="drop-3" />
+            <ul>
+              <li><a href="inteligencia-empresarial.html">INTELIGENCIA EMPRESARIAL</a></li>
+              <li><a href="optimizacion-portafolio-iniciativas.html">OPTIMIZACIÓN DEL PORTAFOLIO DE INICIATIVAS</a></li>
+              <li><a href="planeacion-seguimiento-proyectos.html">PLANEACIÓN Y SEGUIMIENTO DE PROYECTOS</a></li>
+              <li><a href="gestion-beneficios.html">GESTIÓN DE BENEFICIOS</a></li>
+              <li><a href="administracion-cambio.html">ADMINISTRACIÓN DEL CAMBIO</a></li>
+            </ul>
+          </li>
+          <li><a href="implementacion-expertos.html">IMPLEMENTACIÓN</a></li>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-4" class="toggle">TECNOLOGÍA +</label>
+            <a href="tecnologia-inteligencia-empresarial.html">TECNOLOGÍA</a>
+            <input type="checkbox" id="drop-4" />
+            <ul>
+              <li><a href="tecnologia-inteligencia-empresarial.html">INTELIGENCIA EMPRESARIAL</a></li>
+              <li><a href="administracion-empresarial-proyectos-ms-ppm.html">ADMINISTRACIÓN EMPRESARIAL DE PROYECTOS CON MICROSOFT</a></li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-5" class="toggle" id="toggle-alt">ACELERADORES ASTRAN +</label>
+                <a href="pmo-express.html">ACELERADORES ASTRAN</a>
+                <input type="checkbox" id="drop-5" />
+                <ul>
+                  <li><a href="pmo-express.html">PMO EXPRESS</a></li>
+                  <li><a href="pmo-elemental.html">PMO ELEMENTAL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-6" class="toggle">CAPACITACIÓN +</label>
+            <a href="capacitacion.html">CAPACITACIÓN</a>
+            <input type="checkbox" id="drop-6" />
+            <ul>
+              <li><a href="capacitacion.html">CAPACITACIÓN</a></li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-7" class="toggle" id="toggle-alt">PRÁCTICAS DE GESTIÓN +</label>
+                <a href="administracion-proyectos-predictivos.html">PRÁCTICAS DE GESTIÓN</a>
+                <input type="checkbox" id="drop-7" />
+                <ul>
+                  <li><a href="administracion-proyectos-predictivos.html">ADMINISTRACIÓN DE PROYECTOS PREDICTIVOS</a></li>
+                  <li><a href="administracion-proyectos-agiles.html">PRÁCTICAS ÁGILES</a></li>
+                  <li><a href="administracion-proyectos-hibridos.html">ADMINISTRACIÓN DE PROYECTOS HÍBRIDOS</a></li>
+                  <li><a href="programa-everest.html">PROGRAMA EVEREST PARA CERTIFICACIÓN PMP®</a></li>
+                  <li><a href="capacitacion-administracion-cambio.html">ADMINISTRACIÓN DEL CAMBIO</a></li>
+                </ul>
+              </li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-8" class="toggle" id="toggle-alt">COMPETENCIAS DIGITALES +</label>
+                <a href="administracion-proyectos-ms-project.html">COMPETENCIAS DIGITALES</a>
+                <input type="checkbox" id="drop-8" />
+                <ul>
+                  <li><a href="administracion-proyectos-ms-project.html">ADMINISTRACIÓN DE PROYECTOS (MS PROJECT)</a></li>
+                  <li><a href="inteligencia-empresarial-ms-powerbi.html">INTELIGENCIA EMPRESARIAL (MS POWER BI)</a></li>
+                  <li><a href="colaboracion-equipos-ms-teams.html">COLABORACIÓN DE EQUIPOS (MS TEAMS)</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="experiencia.html">EXPERIENCIA</a></li>
+      <li><a href="acerca-de.html">ACERCA DE</a></li>
+      <li><a href="articulos.html">ARTÍCULOS</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-bar">
     <ul>
       <li class="main-li"><a href="index.html">INICIO</a></li>
       <li class="main-li"><a href="servicios.html" class="selected-a">SERVICIOS</a>
@@ -103,7 +197,8 @@
       <div class="h2div">
         <h2>Objetivo</h2>
       </div>
-      <p class="content-special-p"><span class="span-bold">Conocer y aprender la funcionalidad y uso general de Microsoft Project Professional & Online</span> como herramienta de colaboración, y fortalecer la cultura de Gestión de Proyectos aplicando las mejores prácticas. MS Project es una solución para planear, priorizar y administrar proyectos e inversiones.</p>
+      <p class="content-special-p"><span class="span-bold">Conocer y aprender la funcionalidad y uso general de Microsoft Project Professional & Online</span> como herramienta de colaboración, y fortalecer la cultura de Gestión de Proyectos aplicando
+        las mejores prácticas. MS Project es una solución para planear, priorizar y administrar proyectos e inversiones.</p>
       <div class="h2div">
         <h2>Formato</h2>
       </div>
@@ -124,12 +219,11 @@
           El facilitador expone una breve explicación de cada concepto, se comentan casos reales para sensibilizar al grupo y se realizan dinámicas en las que se aplica lo expuesto.
         </li>
         <li class="content-li-p">
-          Las prácticas del taller estarán orientadas a desarrollar un proyecto ejemplo acordado previamente con el responsable del grupo para comprender cómo se aplican las mejores prácticas emitidas por el PMI®, utilizando la suite de herramienta de Microsoft Project.
+          Las prácticas del taller estarán orientadas a desarrollar un proyecto ejemplo acordado previamente con el responsable del grupo para comprender cómo se aplican las mejores prácticas emitidas por el PMI®, utilizando la suite de herramienta
+          de Microsoft Project.
         </li>
       </ul>
-      <div class="h2div">
-        <h2>Beneficios</h2>
-      </div>
+      <h2 class="h2-centered-bigger">Beneficios</h2>
       <div class="beneficios-div">
         <table width="100%">
           <tr>
@@ -157,6 +251,16 @@
           </tr>
         </table>
       </div>
+      <div class="beneficios-div-mobile">
+        <h4 class="h4-light-blue-alt">Extender el conocimiento</h4>
+        <p class="content-p-lineheight-left">de los procesos emitidos por el PMI®.</p>
+        <h4 class="h4-light-blue-alt">Mejorar el aprovechamiento</h4>
+        <p class="content-p-lineheight-left">de las herramientas de Microsoft para la gestión de proyectos y colaboración.</p>
+        <h4 class="h4-light-blue-alt">Facilidad para administrar cronogramas</h4>
+        <p class="content-p-lineheight-left">en el reporte de desempeño para determinar el estado del proyecto y contar con información oportuna para implementar acciones de control.</p>
+        <h4 class="h4-light-blue-alt">Perfeccionar la planeación</h4>
+        <p class="content-p-lineheight-left">de tiempos y uso de recursos.</p>
+      </div>
       <img src="images/admin-de-proyect.jpg" alt="" class="nice-img-alt2">
     </div>
   </div>
@@ -171,22 +275,17 @@
       <table class="footer-table">
         <tr>
           <td class="footer-td">
-            <div class="footer-left-div">
-              <h4>SITE MAP</h4>
-            </div>
-          </td>
-          <td class="footer-td">
             <div class="footer-middle-div">
               <h4>CONTACTO</h4>
               <h4>CDMX</h4>
               <p class="footer-p"><span style="font-size:0.8rem">+52 (55) </span><span style="font-size:1.2rem">5336-4375</span></p>
               <a class="footer-a" href="mailto:atencion@astran.com.mx">
-                <p>atencion@astran.com.mx</p>
+                <p class="footer-ap">atencion@astran.com.mx</p>
               </a>
               <h4>BAJÍO</h4>
               <p class="footer-p"><span style="font-size:0.8rem">+52 (442) </span><span style="font-size:1.2rem">173-2923</span></p>
               <a class="footer-a" href="mailto:atencionbajio@astran.com.mx">
-                <p>atencionbajio@astran.com.mx</p>
+                <p class="footer-ap">atencionbajio@astran.com.mx</p>
               </a>
             </div>
           </td>
@@ -202,6 +301,7 @@
               <p class="footer-p-small">El logotipo de PMI Registered Education Provider es una marca registrada del Project Management Institute, Inc.<br>
                 <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default" class="footer-a">Terms
                   of Use</a> © 2015 Microsoft Corporation. All rights reserved.<br />This site is hosted for Microsoft by Astran, Todos los derechos reservados ASTRAN.</p>
+                  <a href="mapadesitio.html" class="footer-a"><p>Mapa de Sitio</p></a>
             </div>
           </td>
         </tr>

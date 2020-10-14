@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astran – Administración de Proyectos Predictivos, Ágiles e Híbridos</title>
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="css/styles.css">
@@ -14,7 +15,104 @@
   <div class="main-banner-div">
     <a href="index.html"><img class="main-banner" src="images/banner1.png" alt=""></a>
   </div>
-  <nav>
+  <nav class="mobile-nav-bar">
+    <label for="drop" class="toggle-main"><svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.41647 2.83332H26.1224C26.8046 2.83332 27.3577 2.27368 27.3577 1.58332C27.3577 0.892975 26.8046 0.333328 26.1224 0.333328H1.41647C0.734238 0.333328 0.181177 0.892975 0.181177 1.58332C0.181177 2.27368 0.734238 2.83332 1.41647 2.83332Z"
+          fill="#106088" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M26.1224 8.66667H1.41647C0.734238 8.66667 0.181177 9.22633 0.181177 9.91667C0.181177 10.607 0.734238 11.1667 1.41647 11.1667H26.1224C26.8046 11.1667 27.3577 10.607 27.3577 9.91667C27.3577 9.22633 26.8046 8.66667 26.1224 8.66667Z"
+          fill="#106088" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M26.1224 17H1.41647C0.734238 17 0.181177 17.5597 0.181177 18.25C0.181177 18.9403 0.734238 19.5 1.41647 19.5H26.1224C26.8046 19.5 27.3577 18.9403 27.3577 18.25C27.3577 17.5597 26.8046 17 26.1224 17Z" fill="#106088" />
+      </svg>
+    </label>
+    <img class="search-img" src="images/search-blue.png" alt="" width="20px">
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+        <!-- First Tier Drop Down -->
+        <label for="drop-2" class="toggle">SERVICIOS +</label>
+        <a href="servicios.hmtl">SERVICIOS</a>
+        <input type="checkbox" id="drop-2" />
+        <ul>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-3" class="toggle">CONSULTORÍA +</label>
+            <a href="inteligencia-empresarial.html">CONSULTORÍA</a>
+            <input type="checkbox" id="drop-3" />
+            <ul>
+              <li><a href="inteligencia-empresarial.html">INTELIGENCIA EMPRESARIAL</a></li>
+              <li><a href="optimizacion-portafolio-iniciativas.html">OPTIMIZACIÓN DEL PORTAFOLIO DE INICIATIVAS</a></li>
+              <li><a href="planeacion-seguimiento-proyectos.html">PLANEACIÓN Y SEGUIMIENTO DE PROYECTOS</a></li>
+              <li><a href="gestion-beneficios.html">GESTIÓN DE BENEFICIOS</a></li>
+              <li><a href="administracion-cambio.html">ADMINISTRACIÓN DEL CAMBIO</a></li>
+            </ul>
+          </li>
+          <li><a href="implementacion-expertos.html">IMPLEMENTACIÓN</a></li>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-4" class="toggle">TECNOLOGÍA +</label>
+            <a href="tecnologia-inteligencia-empresarial.html">TECNOLOGÍA</a>
+            <input type="checkbox" id="drop-4" />
+            <ul>
+              <li><a href="tecnologia-inteligencia-empresarial.html">INTELIGENCIA EMPRESARIAL</a></li>
+              <li><a href="administracion-empresarial-proyectos-ms-ppm.html">ADMINISTRACIÓN EMPRESARIAL DE PROYECTOS CON MICROSOFT</a></li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-5" class="toggle" id="toggle-alt">ACELERADORES ASTRAN +</label>
+                <a href="pmo-express.html">ACELERADORES ASTRAN</a>
+                <input type="checkbox" id="drop-5" />
+                <ul>
+                  <li><a href="pmo-express.html">PMO EXPRESS</a></li>
+                  <li><a href="pmo-elemental.html">PMO ELEMENTAL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <!-- Second Tier Drop Down -->
+            <label for="drop-6" class="toggle">CAPACITACIÓN +</label>
+            <a href="capacitacion.html">CAPACITACIÓN</a>
+            <input type="checkbox" id="drop-6" />
+            <ul>
+              <li><a href="capacitacion.html">CAPACITACIÓN</a></li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-7" class="toggle" id="toggle-alt">PRÁCTICAS DE GESTIÓN +</label>
+                <a href="administracion-proyectos-predictivos.html">PRÁCTICAS DE GESTIÓN</a>
+                <input type="checkbox" id="drop-7" />
+                <ul>
+                  <li><a href="administracion-proyectos-predictivos.html">ADMINISTRACIÓN DE PROYECTOS PREDICTIVOS</a></li>
+                  <li><a href="administracion-proyectos-agiles.html">PRÁCTICAS ÁGILES</a></li>
+                  <li><a href="administracion-proyectos-hibridos.html">ADMINISTRACIÓN DE PROYECTOS HÍBRIDOS</a></li>
+                  <li><a href="programa-everest.html">PROGRAMA EVEREST PARA CERTIFICACIÓN PMP®</a></li>
+                  <li><a href="capacitacion-administracion-cambio.html">ADMINISTRACIÓN DEL CAMBIO</a></li>
+                </ul>
+              </li>
+              <li>
+                <!-- Second Tier Drop Down -->
+                <label for="drop-8" class="toggle" id="toggle-alt">COMPETENCIAS DIGITALES +</label>
+                <a href="administracion-proyectos-ms-project.html">COMPETENCIAS DIGITALES</a>
+                <input type="checkbox" id="drop-8" />
+                <ul>
+                  <li><a href="administracion-proyectos-ms-project.html">ADMINISTRACIÓN DE PROYECTOS (MS PROJECT)</a></li>
+                  <li><a href="inteligencia-empresarial-ms-powerbi.html">INTELIGENCIA EMPRESARIAL (MS POWER BI)</a></li>
+                  <li><a href="colaboracion-equipos-ms-teams.html">COLABORACIÓN DE EQUIPOS (MS TEAMS)</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="experiencia.html">EXPERIENCIA</a></li>
+      <li><a href="acerca-de.html">ACERCA DE</a></li>
+      <li><a href="articulos.html">ARTÍCULOS</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-bar">
     <ul>
       <li class="main-li"><a href="index.html">INICIO</a></li>
       <li class="main-li"><a href="servicios.html" class="selected-a">SERVICIOS</a>
@@ -96,7 +194,8 @@
           <tr width="100%">
             <td>
               <h2 class="h2-white">Curso de Administración de Proyectos Predictivos</h2>
-              <h2 class="h2-white-small"><a href="administracion-proyectos-predictivos.html" class="a-alt">Predictivos</a> | <a href="administracion-proyectos-agiles.html" class="a-alt">Ágiles</a> | <a href="administracion-proyectos-hibridos.html" class="a-alt">Híbridos</a></h2>
+              <h2 class="h2-white-small"><a href="administracion-proyectos-predictivos.html" class="a-alt">Predictivos</a> | <a href="administracion-proyectos-agiles.html" class="a-alt">Ágiles</a> | <a href="administracion-proyectos-hibridos.html"
+                  class="a-alt">Híbridos</a></h2>
             </td>
           </tr>
         </table>
@@ -104,7 +203,8 @@
       <div class="h2div">
         <h2>Objetivo</h2>
       </div>
-      <p class="content-special-p"><span class="span-bold">Aprender los conceptos, técnicas y herramientas que ayudan a homologar el lenguaje en la administración de proyectos predictivos y su aplicación</span> a situaciones reales para replicar de manera inmediata el conocimiento a sus proyectos, teniendo como marco referencial las mejores prácticas de gestión establecidas por el PMI®, con diferentes niveles de profundización.</p>
+      <p class="content-special-p"><span class="span-bold">Aprender los conceptos, técnicas y herramientas que ayudan a homologar el lenguaje en la administración de proyectos predictivos y su aplicación</span> a situaciones reales para replicar de
+        manera inmediata el conocimiento a sus proyectos, teniendo como marco referencial las mejores prácticas de gestión establecidas por el PMI®, con diferentes niveles de profundización.</p>
       <div class="h2div">
         <h2>Formato</h2>
       </div>
@@ -131,9 +231,7 @@
         <li class="content-li-p">Los facilitadores exponen una breve explicación de cada concepto, se comentan casos resueltos y se realizan dinámicas para reforzar el conocimiento expuesto.</li>
         <li class="content-li-p">Los participantes aplican técnicas y herramientas de la Gestión de Proyectos predictivas aprendidas en equipos generando la documentación y planeación de un proyecto.</li>
       </ul>
-      <div class="h2div">
-        <h2>Beneficios</h2>
-      </div>
+      <h2 class="h2-centered-bigger">Beneficios</h2>
       <div class="beneficios-div">
         <table width="100%">
           <tr>
@@ -171,6 +269,20 @@
           </tr>
         </table>
       </div>
+      <div class="beneficios-div-mobile">
+        <h4 class="h4-light-blue-alt">Los participantes verán resultados</h4>
+        <p class="content-p-lineheight-left">inmediatos sobre cómo aplicar los conocimientos adquiridos a sus proyectos predictivos.</p>
+        <h4 class="h4-light-blue-alt">Apoya a dimensionar el esfuerzo</h4>
+        <p class="content-p-lineheight-left">real de los proyectos predictivos en tiempo, costo y recursos requeridos para disminuir desviaciones.</p>
+        <h4 class="h4-light-blue-alt">Ayuda a identificar los factores</h4>
+        <p class="content-p-lineheight-left">que generen los beneficios esperados de los proyectos predictivos.</p>
+        <h4 class="h4-light-blue-alt">Aprenderá a optimizar</h4>
+        <p class="content-p-lineheight-left">los recursos utilizados.</p>
+        <h4 class="h4-light-blue-alt">Apoya a estandarizar</h4>
+        <p class="content-p-lineheight-left">el lenguaje en el área y/u organización.</p>
+        <h4 class="h4-light-blue-alt">Mejora las habilidades</h4>
+        <p class="content-p-lineheight-left">de planeación y gestión de proyectos predictivos en lo general.</p>
+      </div>
       <img src="images/predictivos.jpg" alt="" class="nice-img-alt2">
     </div>
   </div>
@@ -185,22 +297,17 @@
       <table class="footer-table">
         <tr>
           <td class="footer-td">
-            <div class="footer-left-div">
-              <h4>SITE MAP</h4>
-            </div>
-          </td>
-          <td class="footer-td">
             <div class="footer-middle-div">
               <h4>CONTACTO</h4>
               <h4>CDMX</h4>
               <p class="footer-p"><span style="font-size:0.8rem">+52 (55) </span><span style="font-size:1.2rem">5336-4375</span></p>
               <a class="footer-a" href="mailto:atencion@astran.com.mx">
-                <p>atencion@astran.com.mx</p>
+                <p class="footer-ap">atencion@astran.com.mx</p>
               </a>
               <h4>BAJÍO</h4>
               <p class="footer-p"><span style="font-size:0.8rem">+52 (442) </span><span style="font-size:1.2rem">173-2923</span></p>
               <a class="footer-a" href="mailto:atencionbajio@astran.com.mx">
-                <p>atencionbajio@astran.com.mx</p>
+                <p class="footer-ap">atencionbajio@astran.com.mx</p>
               </a>
             </div>
           </td>
@@ -216,6 +323,7 @@
               <p class="footer-p-small">El logotipo de PMI Registered Education Provider es una marca registrada del Project Management Institute, Inc.<br>
                 <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default" class="footer-a">Terms
                   of Use</a> © 2015 Microsoft Corporation. All rights reserved.<br />This site is hosted for Microsoft by Astran, Todos los derechos reservados ASTRAN.</p>
+                  <a href="mapadesitio.html" class="footer-a"><p>Mapa de Sitio</p></a>
             </div>
           </td>
         </tr>
