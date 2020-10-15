@@ -12,6 +12,16 @@ switch(url){
 }
 $(function(){
 
+    $("#search_a").keypress(function(e){
+        let code = (e.keyCode ? e.keyCode : e.which);
+        if(code==13){
+            let smovil = $("#search_a").val();
+
+            search(smovil);
+            $("#search_a").val("");
+        }
+    })
+
     $("#tags").keyup(function(){
         let q = $("#tags").val();
         sugesstion(q);
@@ -20,7 +30,7 @@ $(function(){
 
   $("#tags").keypress(function(e) {
    
-    var code = (e.keyCode ? e.keyCode : e.which);
+    let code = (e.keyCode ? e.keyCode : e.which);
     if(code==13){
         search();
     }
@@ -35,10 +45,10 @@ $(function(){
 
 
 //Busqueda de contenido
-function search()
+function search(smovil = null)
 {
     console.log(this.api);
-    let q = $("#tags").val();
+    let q = smovil !=null ? smovil:$("#tags").val();
     var listaSearch = $("#content-container");
     let container = $('#pagination');
 

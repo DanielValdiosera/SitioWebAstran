@@ -342,9 +342,9 @@ tbody {
   width: 100%;
 }
 
-input {
+/*input {
   width: 100%;
-  /*padding: 12px 20px;*/
+  //padding: 12px 20px;
   padding: 7.5px 20px;
   margin: 8px 0 30px 0;
   box-sizing: border-box;
@@ -352,11 +352,11 @@ input {
   border-width: 2px;
   border: solid;
   color: #3898c8;
-  /*font-size: 1rem;*/
+  //font-size: 1rem;
   font-size: 1.5rem;
   font-family: 'din_condensedbold', 'dinregular', 'Roboto Condensed', sans-serif;
   outline: none;
-}
+}*/
 
 textarea {
   width: 100%;
@@ -1944,4 +1944,70 @@ ul.service-title>li::before {
     font-size: 1rem;
     line-height: 30px;
   }
+}
+
+
+/*===============================================
+  Buscador Movil
+=================================================*/
+
+#wrap {
+  margin: 10px 0px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  padding: 0;
+  position: relative;
+  background-color: #164073;
+}
+
+input[name="search_a"] {
+    background-color:#fff;
+
+  height: 25px;
+  font-size: 20px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width 1s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[name="search_a"]:focus:hover {
+  border-bottom: 2px solid #164073;
+}
+
+input[name="search_a"]:focus {
+  width: 150px;
+  z-index: 1;
+  border-bottom: 2px solid #164073;
+  cursor: pointer;
+}
+input[name="search_b"] {
+  height: 30px;
+  width: 45px;
+  display: inline-block;
+  color:red;
+  background-image: url("http://grupoastranastranti.com/images/search-blue.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-color:#fff;
+
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer !important;
+  transition: opacity .4s ease;
 }
