@@ -1171,6 +1171,7 @@ input:focus, textarea:focus {
 .servicios-td {
   margin: 0;
   border: white 5px solid;
+  max-height: 200px;
 }
 
 .servicios-tr {
@@ -1253,6 +1254,7 @@ ul.service-title>li::before {
   width: 100%;
   margin: 0;
   padding: 0;
+  max-height: 200px;
 }
 
 .experiencia-table {
@@ -1944,6 +1946,7 @@ ul.service-title>li::before {
     font-size: 1rem;
     line-height: 30px;
   }
+
 }
 
 

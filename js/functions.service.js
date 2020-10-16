@@ -13,7 +13,7 @@ $(document).on('mouseover click','#service-consultancy',function(){
 $(document).on('mouseover click','#service-implementation',function(){
     services('implementation');
 })
-$(document).on('mouseover click','#service-tecnology', function(){    
+$(document).on('mouseover click','#service-tecnology', function(){
     services('tecnology');
 })
 $(document).on('mouseover click','#service-training',function(){
@@ -23,10 +23,10 @@ $(document).on('mouseover click','#service-training',function(){
 function services(service){
 
     if(service === 'imgservice'){
-        $("#options-services").html('<img src="images/servicios6.jpg" class="servicios-img-alt">')}
+        $("#options-services").html('<img src="images/servicios6.jpg" class="servicios-img">')}
     else {
 
-        var options =[{}]; 
+        var options =[{}];
         var html='';
         var title= '';
         switch(service){
@@ -37,62 +37,62 @@ function services(service){
                               {url:'gestion-beneficios.html',topic:'Gestión de Beneficios'},
                               {url:'administracion-cambio.html',topic:'Administración del Cambio'},
                             ];
-                 
-                    
+
+
             break;
-    
+
             case 'implementation':
                 title='Implementación con Expertos en:';
                 html+= '<p class="service-title">'+title+'</p>';
 
                 options =[
                 {url:'implementacion-expertos.html',topic:'<ul class="service-title"><li >Gestión de Proyectos</li><li>Tecnología Microsoft para Gestión de Proyectos</li><li>Administración del Cambio</li>'},
-                
-          
+
+
               ];
-    
+
             break;
             case 'tecnology':
-              
+
                 options =[{url:'tecnologia-inteligencia-empresarial.html',topic:'Inteligencia Empresarial'},
                 {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'Administración Empresarial de Proyectos con Microsoft'},
                 {url:'administracion-empresarial-proyectos-ms-ppm.html',topic:'<a style="color:white" href="administracion-empresarial-proyectos-ms-ppm.html">Aceleradores ASTRAN</a><br><a style="color:white"   href="pmo-express.html">PMO Express</a> | <a style="color:white"   href="pmo-elemental.html">PMO Elemental</a>'},
 
                  ];
-            
+
             break;
-            case 'training':   
+            case 'training':
                     title='Formación corporativa en:';
                     html+= '<p class="service-title">'+title+'</p>';
                     options =[
                     {url:'capacitacion.html',topic:'Prácticas de Gestión y <br>Competencias Digitales'},
                     ];
-            
+
             break;
-    
+
             default:
                 options = ['Por el momento no hay información',
-              
+
                 ];
                 break;
         }
-    
+
 
         for(let i=0; i<options.length;i++){
             html +=  '<p class="servicios-p2 "><a style="color:white"  href="'+options[i].url+'">'+options[i].topic+'</a></p>';
-    
-            //#bug  deberiamos arreglar el width del contenedor 
+
+            //#bug  deberiamos arreglar el width del contenedor
             if(i<(options.length-1)){
                 html += '<hr width="10%">';
             }
-            
+
         }
-       
+
         $("#options-services").html(html);
 
     }
-   
-    
+
+
 }
 
 //Optimizar el código
@@ -113,7 +113,7 @@ $("#service-consultancy").hover(function(){
         "color": "#1868a0"
 
     });
-  
+
   });
   $("#service-implementation").hover(function(){
     $("#img2").css({
@@ -132,7 +132,7 @@ $("#service-consultancy").hover(function(){
         "color": "#1868a0"
 
     });
-  
+
   });
 
   $("#service-tecnology").hover(function(){
@@ -152,7 +152,7 @@ $("#service-consultancy").hover(function(){
         "color": "#1868a0"
 
     });
-  
+
   });
 
   $("#service-training").hover(function(){
@@ -172,6 +172,5 @@ $("#service-consultancy").hover(function(){
         "color": "#1868a0"
 
     });
-  
-  });
 
+  });
