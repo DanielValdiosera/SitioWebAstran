@@ -28,7 +28,7 @@ body {
   background-color: white;
 }
 
-@media only screen and (min-width: 1138px) {
+@media only screen and (min-width: 700px) {
 
   .beneficios-div-mobile {
     display: none;
@@ -200,6 +200,10 @@ h2 {
   background-color: rgba(255, 255, 255, 0.75);
   width: 80%;
   font-size: 3rem;
+}
+
+.fontsize1 {
+  font-size: 1.5rem;
 }
 
 .oferta-alt {
@@ -612,7 +616,7 @@ a {
 }
 
 .footer-td {
-  width: 33%;
+  width: 50%;
   vertical-align: top;
 }
 
@@ -1171,6 +1175,7 @@ input:focus, textarea:focus {
 .servicios-td {
   margin: 0;
   border: white 5px solid;
+  max-height: 200px;
 }
 
 .servicios-tr {
@@ -1253,6 +1258,7 @@ ul.service-title>li::before {
   width: 100%;
   margin: 0;
   padding: 0;
+  max-height: 200px;
 }
 
 .experiencia-table {
@@ -1341,7 +1347,7 @@ ul.service-title>li::before {
   width: 100%;
 }
 
-@media only screen and (max-width: 1138px) {
+@media only screen and (max-width: 700px) {
   .side-btn-div {
     display: none;
   }
@@ -1362,6 +1368,10 @@ ul.service-title>li::before {
     background-color: rgba(255, 255, 255, 0.75);
     width: 80%;
     font-size: 1.25rem;
+  }
+
+  .fontsize1 {
+    font-size: 0.75rem;
   }
 
   .servicios-p {
@@ -1811,7 +1821,7 @@ ul.service-title>li::before {
   h4 {
     text-align: center;
     color: white;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
     font-size: .8rem;
   }
@@ -1937,6 +1947,7 @@ ul.service-title>li::before {
     font-size: .75rem;
     font-family: "dinregular";
     margin: 2px;
+    padding-left: 0;
   }
 
   .sitemap-ul a li {
@@ -1944,6 +1955,18 @@ ul.service-title>li::before {
     font-size: 1rem;
     line-height: 30px;
   }
+
+  .h2-white-alt {
+    font-size: 3.5rem;
+    padding: 0;
+    font-style: normal;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-family: 'd-din_condensedregular';
+  }
+
 }
 
 
