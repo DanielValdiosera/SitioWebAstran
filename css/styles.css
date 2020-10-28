@@ -53,6 +53,10 @@ body {
     display: none;
   }
 
+  .capacitacion-table-mobile {
+    display: none;
+  }
+
   nav {
     background-color: white;
     max-width: 1138px;
@@ -648,6 +652,20 @@ a {
   border-right: none;
   height: 80px;
   margin-top: 30px;
+}
+
+.h2div-sticky {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 60px;
+  border-color: #78a8c0;
+  border-width: 8px;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  background-color: white;
 }
 
 .h2div-alt {
@@ -1967,6 +1985,9 @@ ul.service-title>li::before {
     font-family: 'd-din_condensedregular';
   }
 
+  .h2div-sticky {
+    display: none;
+  }
 }
 
 
