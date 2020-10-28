@@ -7,7 +7,7 @@ switch(url){
         this.api = 'http://bk.astran.com.mx/public/index.php/api'
         break;
     default : 
-        this.api = 'http://astran.test/api'
+        this.api = 'http://bk.astran.com.mx/public/index.php/api'
     break;
 }
 $(function(){
