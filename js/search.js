@@ -1,13 +1,14 @@
 
 var url =  window.location.host;
 var api =  null;
+
 switch(url){
     case 'grupoastranastranti.com':
     case 'astran.com.mx':
-        this.api = 'http://bk.astran.com.mx/public/index.php/api'
+          this.api = 'bk/public/index.php/api';
         break;
     default : 
-        this.api = 'http://bk.astran.com.mx/public/index.php/api'
+        this.api = 'http://astran.test/api'
     break;
 }
 $(function(){
