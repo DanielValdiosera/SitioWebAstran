@@ -4,6 +4,7 @@ var api =  null;
 
 switch(url){
     case 'grupoastranastranti.com':
+    case 'www.astran.com.mx':
     case 'astran.com.mx':
           this.api = 'bk/public/index.php/api';
         break;
