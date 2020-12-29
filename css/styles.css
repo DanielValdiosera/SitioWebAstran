@@ -1095,6 +1095,12 @@ input:focus, textarea:focus {
   width: 45%;
 }
 
+.menu-image {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
 .center-img {
   width: 80%;
   display: block;
@@ -1995,6 +2001,54 @@ ul.service-title>li::before {
     display: none;
   }
 }
+
+.slider {
+        width: 1138px;
+        height: 640px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 3414px;
+        background-color: pink;
+        height: 640px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -1138px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -2276px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: white;
+      }
 
 
 /*===============================================
