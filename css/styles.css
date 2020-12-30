@@ -647,6 +647,13 @@ label {
   font-family: 'd-din_condensedregular';
 }
 
+.contacto-table-p {
+  font-size: 2rem;
+  color: #1868a0;
+  text-align: center;
+  margin: auto;
+}
+
 a {
   color: #c9a74c;
   text-decoration: none;
@@ -770,8 +777,12 @@ a {
   padding: 0;
 }
 
-.somos-table {
+.sdf-table {
   border: 7.5px solid #b0c8e0;
+  width: 98.7%;
+}
+
+.somos-table {
   width: 100%;
 }
 
@@ -910,6 +921,60 @@ a {
 
 .somos-div-alt3 {
   background-color: #1868a0;
+  height: 62px;
+  width: 25%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div:hover {
+  background-color: #082850;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  height: 62px;
+  width: 25%;
+}
+
+.somos-div-alt:hover {
+  background-color: #082850;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  height: 62px;
+  width: 25%;
+}
+
+.somos-div2:hover {
+  background-color: #082850;
+  height: 155px;
+  width: 16.66%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div-alt2:hover {
+  background-color: #082850;
+  height: 155px;
+  width: 16.66%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div3:hover {
+  background-color: #082850;
+  height: 62px;
+  width: 25%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div-alt3:hover {
+  background: #082850;
   height: 62px;
   width: 25%;
   display:table-cell;
