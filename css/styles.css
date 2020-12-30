@@ -982,6 +982,10 @@ a {
   vertical-align:middle;
 }
 
+.big-font-size {
+  font-size: 3rem;
+}
+
 .centered-h2 {
   font-size: 3rem;
   padding: 10px;
