@@ -920,6 +920,15 @@ a {
   padding: 5px 5px 5px 5px;
   z-index: 100;
 }
+.side-icon{
+  font-size: 57px;
+  display: block;
+  top: -5px;
+  vertical-align: middle;
+  background-color: #fff;
+  padding: 1px 0px 5px 5px;
+  z-index: 100;
+}
 
 .side-img:hover {
   background-color: #b0c8e0;
