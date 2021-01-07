@@ -31,6 +31,18 @@ body {
 
 @media only screen and (min-width: 700px) {
 
+.contacto-div-mobile {
+  display: none;
+}
+
+  .somos-table-mobile-div {
+    display: none;
+  }
+
+  .slider-mobile {
+    display: none;
+  }
+
   .beneficios-div-mobile {
     display: none;
   }
@@ -777,7 +789,12 @@ a {
   padding: 0;
 }
 
-.sdf-table {
+.somos-table-mobile-div {
+  border: 7.5px solid #b0c8e0;
+  width: 98.7%;
+}
+
+.somos-table-div {
   border: 7.5px solid #b0c8e0;
   width: 98.7%;
 }
@@ -792,6 +809,14 @@ a {
 
 .somos-table-16td {
   width: 16.66%;
+}
+
+.somos-table-33td {
+  width: 33.33%;
+}
+
+.somos-table-50td {
+  width: 50%;
 }
 
 .left-table-div {
@@ -865,6 +890,13 @@ a {
   text-align: center;
 }
 
+.somos-text-p-mobile {
+  color: white;
+  margin: auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .somos-h2 {
   font-size: 3rem;
   padding: 10px;
@@ -872,6 +904,69 @@ a {
   font-weight: normal;
   text-align: center;
   color: #106088
+}
+
+.somos-h2-mobile {
+  font-size: 2rem;
+  padding: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #106088
+}
+
+.somos-div-mobile {
+  background-color: #6898b8;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  height: 62px;
+  width: 50%;
+}
+
+.somos-div-alt-mobile {
+  background-color: #1868a0;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  height: 62px;
+  width: 50%;
+}
+
+.somos-div2-mobile {
+  background-color: #6898b8;
+  height: 155px;
+  width: 33.33%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div-alt2-mobile {
+  background-color: #1868a0;
+  height: 155px;
+  width: 33.33%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div3-mobile {
+  background-color: #6898b8;
+  height: 120px;
+  width: 50%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+
+.somos-div-alt3-mobile {
+  background-color: #1868a0;
+  height: 120px;
+  width: 50%;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
 }
 
 .somos-div {
@@ -1594,6 +1689,19 @@ ul.service-title>li::before {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .contacto-table {
+    display: none;
+  }
+
+  .somos-table-div {
+    display: none;
+  }
+
+  .slider {
+    display: none;
+  }
+
   .side-btn-div {
     display: none;
   }
@@ -2274,6 +2382,54 @@ ul.service-title>li::before {
         width: 15px;
         border-radius: 50px;
         background-color: white;
+      }
+
+.slider-mobile {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container-mobile {
+        width: 300%;
+        background-color: black;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide-mobile {
+        float: left;
+        width: 33.33%;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1-mobile:target ~ .image-container-mobile {
+        left: 0px;
+      }
+      #slide-2-mobile:target ~ .image-container-mobile {
+        left: -100%;
+      }
+      #slide-3-mobile:target ~ .image-container-mobile {
+        left: -200%;
+      }
+      .buttons-mobile {
+        position: relative;
+        top: -190px;
+      }
+      .buttons-mobile a {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        background-color: blue;
       }
 
 
