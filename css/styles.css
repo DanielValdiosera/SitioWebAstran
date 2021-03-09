@@ -176,6 +176,11 @@ body {
   font-weight: bold;
 }
 
+.span-bold-blue {
+  font-weight: bold;
+  color: #186088;
+}
+
 .span-italic {
   font-style: italic;
 }
@@ -517,6 +522,39 @@ label {
   background-color: #f8f8f8;
   padding: 5px;
   color: #007898;
+}
+
+.content-special-p-inline {
+  font-size: 1.75rem;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #f8f8f8;
+  padding: 5px;
+  color: #007898;
+  display: inline-block;
+}
+
+.content-special-p-small {
+  font-size: 1.60rem;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #f8f8f8;
+  padding: 5px;
+  color: #007898;
+  display: inline-block;
+}
+
+.content-special-p-smaller {
+  font-size: 1.45rem;
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #f8f8f8;
+  padding: 5px;
+  color: #007898;
+  display: inline-block;
 }
 
 .content-special-p2 {
