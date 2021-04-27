@@ -42,11 +42,11 @@ function services(service){
             break;
 
             case 'implementation':
-                title='Implementación con Expertos en:';
+                title='Especialistas en:';
                 html+= '<p class="service-title">'+title+'</p>';
 
                 options =[
-                {url:'implementacion-expertos.html',topic:'<ul class="service-title"><li >Gestión de Proyectos</li><li>Tecnología Microsoft para Gestión de Proyectos</li><li>Administración del Cambio</li>'},
+                {url:'implementacion-expertos.html',topic:'<ul class="service-title"><li >Gestión de Proyectos</li><li>Tecnología Microsoft</li><li>Administración del Cambio</li>'},
 
 
               ];
